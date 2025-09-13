@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% load static %}
+{% block title %}my blog{% endblock title %}
+
+{% block header_reference %}
+<link rel="stylesheet" href="{% static 'blog/index.css' %}">
+<link rel="stylesheet" href="{% static 'blog/all-posts.css' %}">
+{% endblock header_reference %}
+
+{% block content %}
+<section id="all-posts">
+    <h2>This is all posts</h2>
+    <ul>
+        {% include "blog/includes/posts.html" %}
+         {% include "blog/includes/posts.html" %}
+          {% include "blog/includes/posts.html" %}
+           {% include "blog/includes/posts.html" %}
+    </ul>
+</section>
+{% endblock %}

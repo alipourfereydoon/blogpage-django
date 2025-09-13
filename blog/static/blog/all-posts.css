@@ -1,0 +1,30 @@
+body{
+    background-color: aliceblue;
+}
+
+#all-posts{
+    margin: 5rem auto;
+    width: 70%;
+    max-width: 50rem;
+
+}
+
+#all-posts h2{
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem 0;
+}
+#all-posts ul{
+    list-style: none;
+}
+.post a{
+    height: 22rem;
+    transform-origin: center;
+    box-shadow: 0 2rem 8rem rgb(0, 0, 0,0.4);
+    background-color: white;
+    border-radius: 30px;
+}
+
+.post{
+    margin: 15px 0;
+}

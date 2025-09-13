@@ -4,7 +4,7 @@ def index(request):
     return render(request,'blog/index.html')
 
 def posts(request):
-    return render(request,'') 
+    return render(request,'blog/all-posts.html') 
 
 def singlepost(request):
     return render(request,'')       
