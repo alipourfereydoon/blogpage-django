@@ -1,15 +1,15 @@
+{% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>
-        {% block title %}{% endblock title %}
-    </title>
-    {% block header_refrense %}{% endblock header_refrense %}
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'app.css' %}">
+    {% block header_reference %}{% endblock %}
 </head>
 <body>
-    {% block content %}{% endblock content %}
-    {% block footer_references %}{% endblock footer_references %}
+{% block content %}{% endblock %}
+{% block footer_references %}{% endblock %}
 </body>
 </html>
