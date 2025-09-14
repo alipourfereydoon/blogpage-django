@@ -6,5 +6,5 @@ def index(request):
 def posts(request):
     return render(request,'blog/all-posts.html') 
 
-def singlepost(request):
-    return render(request,'')       
+def singlepost(request,slug):
+    return render(request,'blog/post_detail.html')       

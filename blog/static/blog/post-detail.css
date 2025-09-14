@@ -1,0 +1,45 @@
+#summery{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 10px auto;
+    background-color: rgb(17, 17, 17);
+    border-radius: 15px;
+    padding: 10px 25px;
+}
+
+#summery article img{
+    width: 200px;
+    border: 4px solid rgb(245, 190, 190);
+    border-radius: 14px;
+    transform: rotateZ(5deg);
+}
+
+#summery article address{
+    color: white;
+    font-weight: bold;
+
+}
+
+#summery article div{
+    color:white;
+
+}
+
+#summery h2{
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    font-size: 2.2rem;
+}
+
+main{
+    max-width: 1000px;
+    margin: 10px auto;
+    border: 1px solid red;
+    border-radius: 12px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
