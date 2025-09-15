@@ -11,10 +11,10 @@
 <section id="all-posts">
     <h2>This is all posts</h2>
     <ul>
+        {% for item in all_posts  %}
         {% include "blog/includes/posts.html" %}
-         {% include "blog/includes/posts.html" %}
-          {% include "blog/includes/posts.html" %}
-           {% include "blog/includes/posts.html" %}
+        {% endfor %}
+        
     </ul>
 </section>
 {% endblock %}

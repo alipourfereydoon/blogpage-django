@@ -41,7 +41,9 @@ def index(request):
     return render(request,'blog/index.html',{"post":lateste_post})
 
 def posts(request):
-    return render(request,'blog/all-posts.html') 
+    all_posts_detail = all_posts
+    return render(request,'blog/all-posts.html',context={'all_posts':all_posts_detail}) 
 
 def singlepost(request,slug):
-    return render(request,'blog/post_detail.html')       
+    post = next(post for post in all_posts if post['slug']==slug)
+    return render(request,'blog/post_detail.html',context={'post':post})       
